@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Compteur</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <button onclick="minus()">-</button>
+    <p id="result"></p>
+    <button onclick="add()">+</button>
+
+    <script>
+        var result = 0;
+        var resultDisplay = document.getElementById("result");
+        console.log(resultDisplay);
+
+        resultDisplay.innerText = result;
+
+        function add() {
+            result++;
+            resultDisplay.innerText = result;
+        }
+
+        function minus() {
+            result--;
+            resultDisplay.innerText = result;
+        }
+    </script>
+    </body>
+</html>
